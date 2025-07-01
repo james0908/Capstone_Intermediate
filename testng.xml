@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="PositiveTest">
+        <parameter name="userName" value="standard_user"></parameter>
+        <parameter name="password" value="secret_sauce"></parameter>
+        <classes>
+            <class name="VerifyLogin1_PositiveTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="NegativeTest">
+        <parameter name="userName" value="secret_sauce1"></parameter>
+        <parameter name="password" value="secret_sauce1"></parameter>
+        <classes>
+            <class name="VerifyLogin2_NegativeTest"></class>
+        </classes>
+    </test>
+</suite>
